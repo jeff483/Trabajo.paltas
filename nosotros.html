@@ -1,0 +1,152 @@
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Enlace al JavaScript -->
+</head>
+<body>
+    <header>
+                <!-- Logo animado a la izquierda -->
+                <div class="logo-dropdown">
+                    <img src="Imagen1.png" alt="Logo" class="logo" onclick="toggleDropdown()">
+                    <div class="dropdown-menu" id="dropdownMenu">
+                       <a href="index.html"><button>✅Inicio</button></a>
+                       <a href="nosotros.html"><button>✅Nosotros</button></a>
+                       <a href="productos.html"><button>✅Productos</button></a>
+                       <a href="contacto.html"><button>✅Contacto</button></a>
+                        
+                    </div>
+                </div>
+
+     <div class="info-superior">
+        <span>📞  +51 994 273 300</span>
+        <span>✉️ avocados@gmail.com</span>
+    </div>
+    
+        <h1> AvocdaEssence</h1>
+        <h1>Nosotros </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <title>Panel Informativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sección Nosotros -->
+    <section class="nosotros-section">
+        <img src="Captura de pantalla 2024-11-24 202005.png" alt="Concepto 1">
+        
+        <!-- Primera fila: concepto completo -->
+        <div class="concepto full-width animate">
+           
+            <div class="text">
+                <h2>¿QUIENES SOMOS?</h2>
+                <p>En AvocdaEssence , transformamos la riqueza natural del aceite de palta en soluciones innovadoras para el cuidado de la piel. Somos una empresa comprometida con la creación de productos cosméticos que combinan calidad, sostenibilidad y resultados visibles.
+
+                    Nuestra esencia radica en aprovechar lo mejor de la naturaleza, desarrollando cremas que nutren, hidratan y protegen tu piel, mientras cuidamos del medio ambiente. Inspirados por el poder regenerador del aceite de palma, buscamos empoderar a nuestros clientes con productos que reflejan bienestar y belleza natural.
+                    
+                    Más que una marca, somos un equipo apasionado por ofrecer lo mejor para ti y para el planeta. ¡Descubre en cada gota de AvocdaEssence el toque de la naturaleza en tu piel!.</p>
+            </div>
+        </div>
+
+        <!-- Segunda fila: dos conceptos en columnas -->
+        <div class="fila-dos-columnas">
+            <div class="concepto half-width animate">
+                <img src="conchamarca4.jpg" alt="Concepto 2">
+                <div class="text">
+                    <h2>Creación</h2>
+                    <p>Avoorgánico Huayta SAC es una empresa ubicada en el distrito de Conchamarca, proviencia de Ambo, dedicada a la producción y comercialización de productos orgánicos derivados del aceite de palta, bajo la marca Avocdaessence. Esta empresa busca ofrecer productos de alta calidad, frescos y saludables, promoviendo prácticas agrícolas sostenibles y respetuosas con el medio ambiente.Nacimos con un propósito claro: aprovechar la riqueza de la palta, un recurso valioso de nuestra tierra, para desarrollar cosméticos innovadores que marquen la diferencia. </p>
+                </div>
+            </div>
+            <div class="concepto half-width animate">
+                <img src="avocado-farming.jpg" alt="Concepto 3">
+                <div class="text">
+                    <h2>Nuestros Valores </h2>
+                    <p> 
+                       <h3>🌱 Sostenibilidad:</h3>  Trabajamos con prácticas responsables que respeten el medio ambiente.
+                       <h3>✅ Calidad:</h3>  Cada producto es elaborado con los más altos estándares para garantizar su eficacia.
+                       <h3>💡 Innovación:</h3>  Innovación: Exploramos constantemente nuevas formas de mejorar el cuidado de tu piel.
+                      <h3>🤝 Compromiso social:</h3>  Compromiso social: Colaboramos con agricultores locales para fomentar el desarrollo de sus comunidades.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cuarta fila: concepto completo -->
+        <div class="concepto full-width animate">
+            <img src="como-escribir-web-sobre-nosotros.jpg" alt="Concepto 4">
+            <div class="text">
+                <h2>Misión y Visión</h2>
+                <p> <h3>Misión:</h3> Proporcionar soluciones cosméticas que nutran la piel mientras cuidamos del planeta y apoyamos a las comunidades locales.
+                    <h3>Visión: </h3>Convertirnos en líderes en cosmética natural, reconocidos por la calidad de nuestros productos y nuestro compromiso con la sostenibilidad.</p>
+            </div>
+        </div>
+        <div class="message-icon" onclick="toggleAdviceList()">
+            <img src="4477601.png" alt="Consejos Dermatológicos">
+            <span>Consejos Dermatológicos</span>
+        </div>
+        
+        <!-- Lista de consejos dermatológicos -->
+        <div class="advice-list" id="adviceList">
+            <h3>Consejos Dermatológicos:</h3>
+            <ul>
+                <li><strong>Hidrata tu Piel Diariamente: </strong>     
+                    El aceite de palta es un excelente hidratante natural. Aplica tu crema a base de aceite de palta sobre tu piel limpia por la mañana y por la noche para mantenerla suave e hidratada.</li>
+                <li><strong>Usa Protector Solar Junto con la Crema de Aceite de Palta:</strong>   Aunque el aceite de palta ayuda a mantener la piel hidratada, es importante usar protector solar después de aplicar tu crema. Esto ayudará a proteger tu piel de los dañinos rayos UV y evitar el envejecimiento prematuro.</li>
+                <li><strong>Alivio para la Piel Seca y Agrietada:</strong>Si tienes la piel seca o agrietada, el aceite de palta puede ser muy beneficioso. Su alta concentración de ácidos grasos y vitaminas ayuda a regenerar la piel, dejándola más suave y flexible.</li>
+                <li><strong>Exfolia tu Piel de Forma Suave:</strong>Exfoliar la piel una vez por semana eliminará las células muertas y permitirá que los beneficios del aceite de palta penetren mejor. Usa productos suaves para no dañar la barrera cutánea.</li>
+                
+                <li><strong>Mejora la Elasticidad de la Piel:</strong>   El aceite de palta es rico en antioxidantes y ácidos grasos esenciales, los cuales ayudan a mejorar la elasticidad de la piel. Esto puede reducir la aparición de estrías y mejorar el aspecto de la piel flácida..</li>
+                <li><strong>Ayuda a Combatir los Signos de la Edad:</strong>Gracias a sus propiedades antioxidantes, el aceite de palta ayuda a combatir los signos del envejecimiento, reduciendo la aparición de arrugas y líneas finas. Su aplicación regular puede rejuvenecer visiblemente tu piel..</li>
+                <li><strong>Tratamiento Natural para el Acné:</strong>Aunque el aceite de palta es denso, tiene propiedades antiinflamatorias y antibacterianas que pueden ayudar a tratar el acné y reducir la inflamación en la piel. Asegúrate de aplicar solo una pequeña cantidad en las áreas afectadas..</li>
+                
+                 
+                <li><strong>Calma la Irritación de la Piel:</strong>   Si tienes piel sensible o sufres de irritaciones debido a factores ambientales o productos agresivos, el aceite de palta puede calmar la piel y reducir la inflamación.</li>
+                <li><strong>Aporta Vitaminas para la Salud de la Piel:</strong>El aceite de palta está cargado de vitaminas A, D, y E, que son esenciales para una piel saludable. Estas vitaminas ayudan a la regeneración celular y promueven una piel más radiante.</li>
+                <li><strong>Úsalo en Todo el Cuerpo:</strong>No solo es útil para la cara, sino que puedes aplicar la crema de aceite de palta en otras áreas del cuerpo como codos, rodillas y manos, que son zonas propensas a resecarse.</li>
+                
+            </ul>
+        </div>
+
+        <div class="integrantes-container">
+            <div class="integrantes">
+                <img src="Imagen de WhatsApp 2024-11-24 a las 19.55.12_2cda9e5b.jpg" alt="Jabón de palta">
+                <h3>Janampa Atencio Jeff Cristyl</h3>
+            </div>
+            <div class="integrantes">
+                <img src="Imagen de WhatsApp 2024-11-24 a las 20.00.41_51e855d2.jpg" alt="Jabón de palta">
+                <h3>Huayta Espinoza Hector Junior</h3>
+            </div>
+            <div class="integrantes">
+                <img src="MEDRANO_SHUKO.jpg" alt="Jabón de palta">
+                <h3>Medrano Ñaupa Kenin</h3>
+            </div>
+        </div>
+           
+
+    </section>
+
+    
+
+    <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2024 Tienda Online Avoorgánico Huayta S.A.C. Todos los derechos reservados J.A.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+    

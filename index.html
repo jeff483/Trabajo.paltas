@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Enlace al JavaScript -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+                <!-- Logo animado a la izquierda -->
+         <div class="logo-dropdown">
+                    <img src="Imagen1.png" alt="Logo" class="logo" onclick="toggleDropdown()">
+                    <div class="dropdown-menu" id="dropdownMenu">
+                       <a href="index.html"><button>✅Inicio</button></a>
+                       <a href="nosotros.html"><button>✅Nosotros</button></a>
+                       <a href="productos.html"><button>✅Productos</button></a>
+                       <a href="contacto.html"><button>✅Contacto</button></a>
+                        
+                    </div>
+                </div>
+
+    <div class="info-superior">
+        <span>📞  +51 994 273 300</span>
+        <span>✉️ avocados@gmail.com</span>
+    </div>
+        <h1> AvocdaEssence</h1>
+        <h1>Inicio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+  <!-- Contenedor principal -->
+  <div class="inicio-container">
+        
+    <!-- Sección izquierda con el mensaje principal centrado -->
+    <div class="texto-izquierda animate-left">
+        <h1>RESALTE SU PIEL CON LA PUREZA DE NUESTRAS CREMAS</h1>
+        <H2>AvocdaEssence</H2>
+        <p class="descripcion-pequena">
+            Descubre nuestros productos naturales, hechos a base de aceite de palta para cuidar e hidratar tu piel de forma natural.
+        </p>
+    </div>
+
+    <!-- Sección derecha con imagen y texto sobre propiedades -->
+    <div class="imagen-derecha animate-right">
+        <img src="premium_photo-1682096423780-41ca1b04af68.jpg" alt="Chica hermosa" class="imagen-principal">
+       
+        </div>
+       
+
+    </div>
+
+ <!-- Sección de propiedades del aceite de palta -->
+ <div class="propiedades-container animate-propiedades">
+    <div class="imagen-izquierda">
+        <img src="avocado-farming.jpg" alt="Pequeña imagen de palta" class="icono-palta">
+    </div>
+    <div class="texto-derecha">
+        <h2>Propiedades del Aceite de Palta</h2>
+        <p>El aceite de palta es rico en vitaminas A, D y E, proporcionando hidratación profunda y protección para la piel.</p>
+        <p>Ayuda a reducir la inflamación, combate los signos de envejecimiento y aporta un brillo saludable.</p>
+    </div>
+</div>
+
+ <!-- Icono de mensaje en la parte inferior derecha -->
+ <div class="message-icon" onclick="toggleAdviceList()">
+    <img src="4477601.png" alt="Consejos Dermatológicos">
+    <span>Consejos Dermatológicos</span>
+</div>
+
+<!-- Lista de consejos dermatológicos -->
+<div class="advice-list" id="adviceList">
+    <h3>Consejos Dermatológicos:</h3>
+    <ul>
+        <li><strong>Hidrata tu Piel Diariamente: </strong>     
+            El aceite de palta es un excelente hidratante natural. Aplica tu crema a base de aceite de palta sobre tu piel limpia por la mañana y por la noche para mantenerla suave e hidratada.</li>
+        <li><strong>Usa Protector Solar Junto con la Crema de Aceite de Palta:</strong>   Aunque el aceite de palta ayuda a mantener la piel hidratada, es importante usar protector solar después de aplicar tu crema. Esto ayudará a proteger tu piel de los dañinos rayos UV y evitar el envejecimiento prematuro.</li>
+        <li><strong>Alivio para la Piel Seca y Agrietada:</strong>Si tienes la piel seca o agrietada, el aceite de palta puede ser muy beneficioso. Su alta concentración de ácidos grasos y vitaminas ayuda a regenerar la piel, dejándola más suave y flexible.</li>
+        <li><strong>Exfolia tu Piel de Forma Suave:</strong>Exfoliar la piel una vez por semana eliminará las células muertas y permitirá que los beneficios del aceite de palta penetren mejor. Usa productos suaves para no dañar la barrera cutánea.</li>
+        
+        <li><strong>Mejora la Elasticidad de la Piel:</strong>   El aceite de palta es rico en antioxidantes y ácidos grasos esenciales, los cuales ayudan a mejorar la elasticidad de la piel. Esto puede reducir la aparición de estrías y mejorar el aspecto de la piel flácida..</li>
+        <li><strong>Ayuda a Combatir los Signos de la Edad:</strong>Gracias a sus propiedades antioxidantes, el aceite de palta ayuda a combatir los signos del envejecimiento, reduciendo la aparición de arrugas y líneas finas. Su aplicación regular puede rejuvenecer visiblemente tu piel..</li>
+        <li><strong>Tratamiento Natural para el Acné:</strong>Aunque el aceite de palta es denso, tiene propiedades antiinflamatorias y antibacterianas que pueden ayudar a tratar el acné y reducir la inflamación en la piel. Asegúrate de aplicar solo una pequeña cantidad en las áreas afectadas..</li>
+        
+         
+        <li><strong>Calma la Irritación de la Piel:</strong>   Si tienes piel sensible o sufres de irritaciones debido a factores ambientales o productos agresivos, el aceite de palta puede calmar la piel y reducir la inflamación.</li>
+        <li><strong>Aporta Vitaminas para la Salud de la Piel:</strong>El aceite de palta está cargado de vitaminas A, D, y E, que son esenciales para una piel saludable. Estas vitaminas ayudan a la regeneración celular y promueven una piel más radiante.</li>
+        <li><strong>Úsalo en Todo el Cuerpo:</strong>No solo es útil para la cara, sino que puedes aplicar la crema de aceite de palta en otras áreas del cuerpo como codos, rodillas y manos, que son zonas propensas a resecarse.</li>
+        
+    </ul>
+</div>
+
+<!-- Botón flotante -->
+<button class="boton-flotante" onclick="mostrarBeneficios()">
+    <img src="png-clipart-hampton-employee-benefits-symbol-computer-icons-business-aloe-miscellaneous-company.png" alt="Logo"> <!-- Cambia la ruta por tu logo -->
+    Beneficios de Uso
+</button>
+
+<!-- Lista de beneficios (oculta por defecto) -->
+<div class="lista-beneficios" id="lista-beneficios">
+    <ul>
+        <li>Hidratación profunda para la piel.</li>
+        <li>Reduce los signos de envejecimiento.</li>
+        <li>Mejora la elasticidad y firmeza de la piel.</li>
+        <li>Antioxidante natural que protege la piel.</li>
+    </ul>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Tienda Online Avoorgánico Huayta S.A.C. Todos los derechos reservados J.A.</p>
+</footer>
+</html>

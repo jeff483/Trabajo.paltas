@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-dropdown">
+            <img src="Imagen1.png" alt="Logo" class="logo" onclick="toggleDropdown()">
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="index.html"><button>✅Inicio</button></a>
+                <a href="nosotros.html"><button>✅Nosotros</button></a>
+                <a href="productos.html"><button>✅Productos</button></a>
+                <a href="contacto.html"><button>✅Contacto</button></a>
+            </div>
+        </div>
+        <div class="info-superior">
+            <span>📞 +51 994 273 300</span>
+            <span>✉️ avocados@gmail.com</span>
+        </div>
+        <h1>AvocdaEssence</h1>
+        <h1>Carrito de Compras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido del carrito -->
+    <section id="carrito">
+        <h2>Productos en tu carrito</h2>
+        <ul id="listaCarrito">
+            <!-- Aquí se mostrarán los productos agregados al carrito -->
+        </ul>
+        <h3>Total: S/. <span id="totalCarrito">0</span></h3>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <a href="productos.html"><button>Seguir Comprando</button></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda Online Avoorgánico Huayta S.A.C. Todos los derechos reservados J.A.</p>
+    </footer>
+</body>
+</html>

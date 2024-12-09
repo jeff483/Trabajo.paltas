@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Enlace al JavaScript -->
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+                <!-- Logo animado a la izquierda -->
+     <!-- Logo animado a la izquierda -->
+     <div class="logo-dropdown">
+        <img src="Imagen1.png" alt="Logo" class="logo" onclick="toggleDropdown()">
+        <div class="dropdown-menu" id="dropdownMenu">
+           <a href="index.html"><button>✅Inicio</button></a>
+           <a href="nosotros.html"><button>✅Nosotros</button></a>
+           <a href="productos.html"><button>✅Productos</button></a>
+           <a href="contacto.html"><button>✅Contacto</button></a>
+            
+        </div>
+    </div>
+
+
+    <div class="info-superior">
+        <span>📞  +51 994 273 300</span>
+        <span>✉️ avocados@gmail.com</span>
+    </div>
+    <h1> AvocdaEssence</h1>
+        <h1>Nuestros Productos</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <!-- Botón flotante del carrito -->
+<a href="carrito.html" id="btnCarritoFlotante">
+    🛒 Carrito
+</a>
+<!-- Modal del carrito -->
+<div id="modalCarrito" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Carrito de Compras</h2>
+        <ul id="listaCarrito"></ul>
+        <h3>Total: S/. <span id="totalCarrito">0</span></h3>
+    </div>
+</div>
+
+
+   <!-- Lista de Productos -->
+   <section id="productos">
+    <!-- Producto 1 -->
+    <div class="producto">
+        <img src="cap1.png" alt="Crema de palta">
+        <h3>Natural Skincare 20 g</h3>
+        <p>Crema para la piel a base de aceite de palta de 20 gramos.</p>
+        <p class="precio">S/. 20</p>
+        <label for="cantidad1">Cantidad:</label>
+        <input type="number" id="cantidad1" min="1" value="1">
+        <button 
+        onclick="agregarAlCarrito('Natural Skincare 20 g', 20, document.getElementById('cantidad1').value, 'cap1.png')">
+        Agregar al carrito
+    </button>
+    </div>
+    <!-- Producto 2 -->
+    <div class="producto">
+        <img src="cap2.png" alt="Crema de palta">
+        <h3>Natural Skincare 30 g</h3>
+        <p>Crema para la piel a base de aceite de palta de 30 gramos.</p>
+        <p class="precio">S/. 25</p>
+        <label for="cantidad2">Cantidad:</label>
+        <input type="number" id="cantidad2" min="1" value="1">
+        <button onclick="agregarAlCarrito('Natural Skincare 30 g', 25, document.getElementById('cantidad2').value)">Agregar al carrito</button>
+    </div>
+    <!-- Producto 3 -->
+    <div class="producto">
+        <img src="cap3.png" alt="Crema de palta">
+        <h3>Natural Skincare 50 g</h3>
+        <p>Crema para la piel a base de aceite de palta de 50 gramos.</p>
+        <p class="precio">S/. 40</p>
+        <label for="cantidad3">Cantidad:</label>
+        <input type="number" id="cantidad3" min="1" value="1">
+        <button onclick="agregarAlCarrito('Natural Skincare 50 g', 40, document.getElementById('cantidad3').value)">Agregar al carrito</button>
+    </div>
+    <!-- Producto 4 -->
+    <div class="producto">
+        <img src="cap4.png" alt="Crema de palta">
+        <h3>Natural Skincare 100 g</h3>
+        <p>Crema para la piel a base de aceite de palta de 100 gramos.</p>
+        <p class="precio">S/. 70</p>
+        <label for="cantidad4">Cantidad:</label>
+        <input type="number" id="cantidad4" min="1" value="1">
+        <button onclick="agregarAlCarrito('Natural Skincare 100 g', 70, document.getElementById('cantidad4').value)">Agregar al carrito</button>
+    </div>
+    <!-- Producto 5 -->
+    <div class="producto">
+        <img src="cap5.png" alt="Crema de palta">
+        <h3>Natural Skincare 150 g</h3>
+        <p>Crema para la piel a base de aceite de palta de 150 gramos.</p>
+        <p class="precio">S/. 100</p>
+        <label for="cantidad5">Cantidad:</label>
+        <input type="number" id="cantidad5" min="1" value="1">
+        <button onclick="agregarAlCarrito('Natural Skincare 150 g', 100, document.getElementById('cantidad5').value)">Agregar al carrito</button>
+    </div>
+    <!-- Producto 6 -->
+    <div class="producto">
+        <img src="cap6.png" alt="Aceite de palta">
+        <h3>Aceite de palta 60ml</h3>
+        <p>Aceite de palta para uso medicinal 100% puro.</p>
+        <p class="precio">S/. 60</p>
+        <label for="cantidad6">Cantidad:</label>
+        <input type="number" id="cantidad6" min="1" value="1">
+        <button onclick="agregarAlCarrito('Aceite de palta 60ml', 60, document.getElementById('cantidad6').value)">Agregar al carrito</button>
+    </div>
+    <!-- Producto 7 -->
+    <div class="producto">
+        <img src="cap7.png" alt="Aceite de palta">
+        <h3>Aceite de palta 100ml</h3>
+        <p>Aceite de palta para uso medicinal 100% puro.</p>
+        <p class="precio">S/. 100</p>
+        <label for="cantidad7">Cantidad:</label>
+        <input type="number" id="cantidad7" min="1" value="1">
+        <button onclick="agregarAlCarrito('Aceite de palta 100ml', 100, document.getElementById('cantidad7').value)">Agregar al carrito</button>
+    </div>
+</section>
+<div class="message-icon" onclick="toggleAdviceList()">
+    <img src="4477601.png" alt="Consejos Dermatológicos">
+    <span>Consejos Dermatológicos</span>
+</div>
+
+<!-- Lista de consejos dermatológicos -->
+<div class="advice-list" id="adviceList">
+    <h3>Consejos Dermatológicos:</h3>
+    <ul>
+        <li><strong>Hidrata tu Piel Diariamente: </strong>     
+            El aceite de palta es un excelente hidratante natural. Aplica tu crema a base de aceite de palta sobre tu piel limpia por la mañana y por la noche para mantenerla suave e hidratada.</li>
+        <li><strong>Usa Protector Solar Junto con la Crema de Aceite de Palta:</strong>   Aunque el aceite de palta ayuda a mantener la piel hidratada, es importante usar protector solar después de aplicar tu crema. Esto ayudará a proteger tu piel de los dañinos rayos UV y evitar el envejecimiento prematuro.</li>
+        <li><strong>Alivio para la Piel Seca y Agrietada:</strong>Si tienes la piel seca o agrietada, el aceite de palta puede ser muy beneficioso. Su alta concentración de ácidos grasos y vitaminas ayuda a regenerar la piel, dejándola más suave y flexible.</li>
+        <li><strong>Exfolia tu Piel de Forma Suave:</strong>Exfoliar la piel una vez por semana eliminará las células muertas y permitirá que los beneficios del aceite de palta penetren mejor. Usa productos suaves para no dañar la barrera cutánea.</li>
+        
+        <li><strong>Mejora la Elasticidad de la Piel:</strong>   El aceite de palta es rico en antioxidantes y ácidos grasos esenciales, los cuales ayudan a mejorar la elasticidad de la piel. Esto puede reducir la aparición de estrías y mejorar el aspecto de la piel flácida..</li>
+        <li><strong>Ayuda a Combatir los Signos de la Edad:</strong>Gracias a sus propiedades antioxidantes, el aceite de palta ayuda a combatir los signos del envejecimiento, reduciendo la aparición de arrugas y líneas finas. Su aplicación regular puede rejuvenecer visiblemente tu piel..</li>
+        <li><strong>Tratamiento Natural para el Acné:</strong>Aunque el aceite de palta es denso, tiene propiedades antiinflamatorias y antibacterianas que pueden ayudar a tratar el acné y reducir la inflamación en la piel. Asegúrate de aplicar solo una pequeña cantidad en las áreas afectadas..</li>
+        
+         
+        <li><strong>Calma la Irritación de la Piel:</strong>   Si tienes piel sensible o sufres de irritaciones debido a factores ambientales o productos agresivos, el aceite de palta puede calmar la piel y reducir la inflamación.</li>
+        <li><strong>Aporta Vitaminas para la Salud de la Piel:</strong>El aceite de palta está cargado de vitaminas A, D, y E, que son esenciales para una piel saludable. Estas vitaminas ayudan a la regeneración celular y promueven una piel más radiante.</li>
+        <li><strong>Úsalo en Todo el Cuerpo:</strong>No solo es útil para la cara, sino que puedes aplicar la crema de aceite de palta en otras áreas del cuerpo como codos, rodillas y manos, que son zonas propensas a resecarse.</li>
+        
+    </ul>
+</div>
+
+<!-- Botón flotante -->
+<button class="floating-button" onclick="toggleInfo()">¿CÓMO USARLO?</button>
+
+<!-- Información sobre cómo usar la crema -->
+<div class="info-uso" id="infoUso">
+  <h2>¿Cómo usar la crema?</h2>
+  <ul>
+    <li><strong>Limpieza previa: </strong>     
+        Antes de aplicar la crema, asegúrate de que tu piel esté limpia y seca. Utiliza un limpiador suave para eliminar cualquier impureza o residuo de maquillaje.</li>
+    <li><strong>Aplicación:</strong> </li>  
+        <li>Toma una pequeña cantidad de crema con la yema de los dedos.</li>
+        <li>Aplica la crema de manera uniforme en el rostro o en la zona del cuerpo que deseas tratar.</li>
+        <li>Realiza movimientos suaves y circulares, comenzando desde el centro del rostro hacia afuera. Esto favorece la absorción y mejora la circulación sanguínea.</li>
+    <li><strong>Frecuencia de uso:</strong></li>
+        <li>Se recomienda aplicar la crema dos veces al día: por la mañana y por la noche, para obtener mejores resultados.</li>
+        <li>Puede usarse también como hidratante durante el día, o como tratamiento intensivo antes de dormir..</li>
+    <li><strong> Masaje:</strong>Si deseas aprovechar las propiedades relajantes y regeneradoras del aceite de palta, realiza un pequeño masaje facial de unos minutos con movimientos ascendentes. Esto estimulará la producción de colágeno y ayudará a prevenir la flacidez.</li>
+    <li><strong>Cuidado de la piel delicada:</strong></li>
+        <li>Evita el contacto directo con los ojos. En caso de que ocurra, enjuaga con agua tibia.</li>
+        <li>Puedes usar la crema en otras zonas del cuerpo, como las manos, codos o rodillas, que también requieren hidratación intensiva.</li>
+    <li><strong> Almacenaje:</strong>Guarda la crema en un lugar fresco y seco. Evita la exposición directa al sol para mantener la calidad de sus ingredientes.</li>
+  </ul>
+</div>
+<footer>
+    <p>&copy; 2024 Tienda Online Avoorgánico Huayta S.A.C. Todos los derechos reservados J.A.</p>
+</footer>

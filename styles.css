@@ -1,0 +1,1127 @@
+/* Reset básico */
+* {
+    margin:0;
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+   
+    background-color: #7f6e7e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#productos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 200px;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.producto button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* estilos para contacto.html */
+#info-contacto {
+    padding: 2rem;
+    text-align: center;
+}
+
+#info-contacto form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info-contacto form label, 
+#info-contacto form input,
+#info-contacto form button {
+    margin: 0.5rem 0;
+}
+
+#info-contacto form input[type="file"] {
+    border: none;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.whatsapp-contacto {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.whatsapp-icon {
+    width: 200px; /* Ajusta el tamaño de la imagen de WhatsApp según necesites */
+    height: auto;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1EBEA5; /* Color de hover para el botón */
+}
+.llamenos {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.numero-telefono {
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilo para la sección con imagen en el lado derecho */
+.seccion-con-imagen {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.contenido-texto {
+    width: 50%; /* La mitad izquierda para el texto */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seccion-con-imagen::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%; /* La mitad derecha para la imagen */
+    height: 80%;
+    background-image: url('istockphoto-1352840704-612x612.jpg'); /* Cambia a la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Para que la imagen esté detrás del contenido de texto */
+}
+
+.contenido-texto h2 {
+    font-size: 3rem;
+    font-family: 'Lobster', cursive; /* Aplica la fuente animada */
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center; /* Ajusta la alineación si es necesario */
+}
+
+.texto-pequeno {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Lobster', cursive; /* Aplica la fuente animada */
+    text-align: center; /* Ajusta la alineación si es necesario */
+}
+
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.producto .precio {
+    font-size: 1.1rem;
+    color: #4caf50;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.producto .cantidad {
+    width: 60px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.producto button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #45a049;
+}
+
+.contacto-contenedor {
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Contenedor flex para organizar las secciones */
+.contacto-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo para la parte de WhatsApp */
+.whatsapp {
+    flex: 1;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton-animado {
+    padding: 10px 20px;
+    background-color: #25d366;  /* WhatsApp color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.boton-animado:hover {
+    background-color: #128c7e; /* WhatsApp hover color */
+}
+
+/* Estilos para la parte de Redes Sociales */
+.redes-sociales {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes {
+    display: flex;
+    gap: 100px;
+}
+
+.icono-redes {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+.icono-redes:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociales h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+
+
+.panel-contenedor {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+
+/* Contenedor del logo en la parte izquierda */
+.logo-container {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la parte izquierda */
+    z-index: 1000; /* Asegura que el logo esté encima de otros elementos */
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
+    animation: parpadeo 8s infinite; /* Aplicamos la animación de parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes parpadeo {
+    0% {
+        opacity: 1; /* Totalmente visible */
+    }
+    50% {
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        opacity: 1; /* Vuelve a ser visible */
+    }
+}
+
+/* Aseguramos que el contenido no quede debajo del logo */
+.content {
+    margin-left: 140px; /* Deja espacio para el logo */
+}
+
+.nosotros-section {
+    padding: 20px;
+}
+
+/* Estilos de los conceptos */
+.concepto {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffe6f0; /* Fondo en tono pastel */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.concepto1 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #faf9f9; /* Fondo en tono pastel */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para la fila completa */
+.full-width {
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilo para la fila de dos columnas */
+.fila-dos-columnas {
+    display: flex;
+    gap: 30px;
+}
+
+.half-width {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilo para las imágenes */
+.concepto img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Estilos de texto */
+.text h2 {
+    font-size: 1.5em;
+    color: #d7006d; /* Color rosado oscuro */
+}
+
+.text p {
+    color: #6f2c51;
+    font-size: 1em;
+}
+
+/* Efectos de hover */
+.concepto:hover {
+    transform: scale(1.02); /* Efecto de agrandamiento en hover */
+    background-color: #fbf8f9; /* Color de fondo ligeramente más claro */
+}
+
+/* Animación de entrada */
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+/* Keyframes para la animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.integrantes-container {
+    display: flex;
+    justify-content: center;  /* Centra los elementos en una fila */
+    gap: 20px;  /* Espacio entre los bloques */
+}
+.integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+.integrantes img {
+    width: 100%;
+    border-radius: 8px;
+}
+.integrantes h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #34495e;
+}
+
+
+
+.inicio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: #5e2a43;
+}
+
+/* Estilos para la sección de texto en la izquierda */
+.texto-izquierda {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrado del texto */
+}
+
+.texto-izquierda h1 {
+    font-size: 2.5em;
+    color: #d15b82; /* Color rosa oscuro */
+    margin: 0;
+}
+
+.descripcion-pequena {
+    font-size: 1em;
+    color: #6f2c51; /* Color morado suave */
+    margin-top: 10px;
+}
+
+/* Estilos para la sección de imagen y texto a la derecha */
+.imagen-derecha {
+    width: 50%;
+    text-align: center;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.propiedades {
+    background-color: #fde3ea; /* Fondo rosa claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.propiedades h2 {
+    font-size: 1.5em;
+    color: #7747a3;
+    margin-top: 0;
+}
+
+.propiedades p {
+    font-size: 1em;
+    color: #5e2a43;
+}
+
+/* Estilos para la sección de propiedades */
+.propiedades-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fde3ea;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 20px auto; /* Centrado en la página */
+}
+
+/* Imagen pequeña en la izquierda */
+.imagen-izquierda {
+    margin-right: 20px;
+}
+
+.icono-palta {
+    width: 300px; /* Tamaño de la imagen pequeña */
+    height: auto;
+    border-radius: 100%; /* Hace que la imagen tenga un aspecto redondeado */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto en la derecha */
+.texto-derecha h2 {
+    font-size: 1.5em;
+    color: #d7006d;
+    margin-top: 0;
+}
+
+.texto-derecha p {
+    font-size: 1em;
+    color: #5e2a43;
+}
+
+/* Animaciones */
+.animate-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideInLeft 1s ease forwards;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideInRight 1s ease forwards;
+}
+
+.animate-propiedades {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 1s ease forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.mapa-container {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del mapa */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+/* Estilo del contenedor de contacto en la parte superior derecha */
+.info-superior {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 15px; /* Espacio entre el número y el correo */
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Para que aparezca sobre otros elementos */
+}
+
+.info-superior span {
+    display: inline-block;
+}
+
+
+/* Estilo para el logo */
+.logo {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Logo fijo en la parte superior izquierda */
+.logo-dropdown {
+    position: fixed; /* Fija el contenedor en la pantalla */
+    top: 10px; /* Espacio desde la parte superior de la pantalla */
+    left: 10px; /* Espacio desde el borde izquierdo de la pantalla */
+    z-index: 1000; /* Asegura que el logo esté por encima del contenido */
+}
+
+.logo {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+/* Menú desplegable: inicialmente oculto */
+.dropdown-menu {
+    display: none; /* Escondido por defecto */
+    position: absolute;
+    top: 110%; /* Mueve el menú debajo del logo */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Estilo de los botones dentro del menú */
+.dropdown-menu button {
+    background-color: #9c409b; /* Verde */
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown-menu button:hover {
+    background-color: #a837a3;
+}
+
+.message-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounce 1.5s infinite;
+}
+
+.message-icon img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.message-icon span {
+    font-size: 16px;
+}
+
+.advice-list {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: none; /* Inicialmente oculto */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.advice-list h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.advice-list ul {
+    padding-left: 20px;
+    max-height: 350px; /* Define la altura máxima del contenedor */
+    overflow-y: auto;  /* Habilita el desplazamiento vertical */
+    padding-right: 10px; /* Espacio a la derecha para la barra de desplazamiento */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilos para el botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .floating-button:hover {
+    background-color: #45a049;
+  }
+  
+  .floating-button:focus {
+    outline: none;
+  }
+  
+  /* Estilos para el panel informativo */
+  .info-uso {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    animation: slideUp 0.5s ease-out; /* Animación para aparecer */
+  }
+  
+  .info-uso h2 {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .info-uso ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .info-uso li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Animación para deslizar hacia arriba */
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .boton-flotante {
+    position: fixed;
+    bottom: 20px; /* A 20px del fondo */
+    left: 20px; /* A 20px del borde izquierdo */
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Botón redondeado */
+    padding: 15px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Efecto cuando el mouse pasa por encima */
+.boton-flotante:hover {
+    background-color: #45a049;
+}
+
+.boton-flotante img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilo de la lista de beneficios */
+.lista-beneficios {
+    display: none; /* Oculta la lista por defecto */
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed;
+    bottom: 70px; /* A 70px del fondo */
+    left: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    max-height: 250px; /* Limitar la altura de la lista */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+}
+
+.lista-beneficios ul {
+    list-style-type: circle; /* Viñetas */
+    padding-left: 20px;
+}
+
+/* Estilo para cada ítem */
+.lista-beneficios li {
+    margin-bottom: 10px;
+}
+
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+#btnCarritoFlotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1000;
+}
+#btnCarritoFlotante:hover {
+    background-color: #218838;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content .close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-content .close:hover {
+    color: black;
+}
+
+ul#listaCarrito {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#listaCarrito li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+}
+
+
+#carrito {
+    width: 80%;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#productosCarrito {
+    margin-top: 20px;
+}
+
+.productoCarrito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.imagenProducto {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.infoProducto h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.infoProducto p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.precioIndividual {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.accionesProducto {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botonCantidad {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botonCantidad:hover {
+    background-color: #0056b3;
+}
+
+.botonEliminar {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: #dc3545;
+}
+
+.botonEliminar:hover {
+    color: #a71d2a;
+}
+
+#totalCarrito {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.carrito-imagen {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#btnCarritoFlotante {
+    position: fixed;
+    bottom: 580px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1000;
+}
+#btnCarritoFlotante:hover {
+    background-color: #218838;
+}
